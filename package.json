@@ -1,0 +1,21 @@
+{
+  "name": "peerserve",
+  "version": "0.0.0",
+  "description": "quick PeerServer with mdns and portfinder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "PeerServer",
+    "peer",
+    "mdns"
+  ],
+  "author": "WhyThePlatypus",
+  "license": "BSD",
+  "dependencies": {
+    "portfinder": "~0.2.1",
+    "peer": "git://github.com/peers/peerjs-server.git"
+  }
+}
