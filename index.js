@@ -1,9 +1,6 @@
-var PeerServer = require('peer').PeerServer,
-	portfinder = require('portfinder');
+var PeerServer = require('peer').PeerServer;
 
-portfinder.getPort(function (err, port) {
-	if(err)
-		return err;
-	var server = new PeerServer({ port: port , debug: true});
+module.exports = function(port){
+	var server = new PeerServer({ port: port});
 	console.log("new peer server listening on "+port);
-});
+}

@@ -1,21 +1,27 @@
 {
   "name": "peerserve",
   "version": "0.0.0",
-  "description": "quick PeerServer with mdns and portfinder",
+  "description": "Really quick PeerServer and portfinder",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "",
+  "bin" : {
+    "peerserve" : "bin/cli.js"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "git://github.com/whytheplatypus/peerserve.git"
+  },
   "keywords": [
     "PeerServer",
     "peer",
-    "mdns"
   ],
   "author": "WhyThePlatypus",
   "license": "BSD",
   "dependencies": {
     "portfinder": "~0.2.1",
-    "peer": "git://github.com/peers/peerjs-server.git"
+    "peer": "git://github.com/peers/peerjs-server.git",
+    "commander": "~1.1.1"
   }
 }
